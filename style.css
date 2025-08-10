@@ -1,0 +1,182 @@
+/* Propiedades basicas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --first-color: rgba(46, 125, 50, 1);
+    --first-color-opacity: rgba(46, 125, 50, 0.8);
+    --second-color: rgb(255, 255, 255);
+    --second-color-opacity: rgba(255, 255, 255, 0.8);
+    --third-color: rgba(55, 71, 79, 1);
+    --third-color-opacity: rgba(55, 71, 79, 0.4);
+    --accent-color: rgba(0, 188, 212, 1);
+    --accent-color-opacity: rgba(0, 188, 212, 0.50);
+    --highlight-color: rgba(255, 235, 59, 1);
+    --highlight-color-opacity: rgba(255, 235, 59, 0.8);
+    --soft-green: rgba(165, 214, 167, 1);
+    --soft-green-opacity: rgba(165, 214, 167, 0.8);
+    --text-color: rgba(20, 20, 20, 80%);
+    --max-width: 1200px;
+    --font: "Poppins";
+}
+
+/* Reseteo */
+
+html{
+    box-sizing: border-box;
+    font-family: var(--font), sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    color: var(--text-color);
+}
+
+
+h1{
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+h3{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+p{
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*    Componentes      */
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: var(--first-color);
+    padding: 0.5rem;
+    min-height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.menu {
+    position: static;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    opacity: 1;
+}
+
+.menu a {
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+.menu a:last-child {
+    padding-right: 0;
+}
+
+.menu a:hover {
+    background-color: transparent;
+}
+
+.logo a{
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--second-color);
+    padding: .9rem 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/*    Hero Image      */
+
+.hero-image{
+    background-image: url(./assets/Hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-opacity{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--third-color-opacity);
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: max(16px, calc((100vw - var(--max-width)) / 2));
+    padding-right: max(16px, calc((100vw - var(--max-width)) / 2));
+}
+
+.hero-image-content{
+    max-width: 850px;
+    color: var(--second-color);
+}
+
+.hero-image-text{
+    font-size: clamp(2rem, 6vw, 4.2rem);
+    line-height: 1.05;
+    font-weight: 800;
+    margin: 0 0 1rem;
+}
+
+/* Servicios */
+
