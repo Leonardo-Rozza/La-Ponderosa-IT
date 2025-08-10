@@ -180,3 +180,30 @@ img {
 
 /* Servicios */
 
+.title-services{
+    border-bottom: thick solid var(--first-color);
+    border-top: thick solid var(--first-color);
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 600px;
+}
+
+.service-card {
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.services > .container{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    align-content: center;
+}
+
+.services .title-services{
+    grid-column: span 3;
+}
+
+/* Galeria  - Carrusel */
