@@ -380,7 +380,7 @@ img {
 }
 
 /* Footer */
-/* ===== Footer compacto – íconos grandes, separados ===== */
+
 .footer{
     background: var(--first-color);
     color: var(--second-color);
@@ -388,26 +388,25 @@ img {
 }
 
 .footer-compact{
-    display: flex;                /* <- te faltaba */
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: .9rem;
     padding: 1rem 0 1.25rem;
 }
 
-/* fila de íconos */
+
 .footer .social{
     width: 100%;
-    max-width: 680px;             /* para que no se peguen a los bordes */
+    max-width: 680px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;  /* ← “space-between” */
+    justify-content: space-between;
     align-items: center;
     gap: 0;
     padding-inline: .5rem;
 }
 
-/* botón redondo */
 .footer .social a{
     display: grid; place-items: center;
     width: clamp(56px, 6vw, 68px);
@@ -415,7 +414,7 @@ img {
     border-radius: 999px;
     border: 2px solid rgba(255,255,255,.35);
     background: transparent;
-    color: var(--second-color);      /* ← hace que el SVG sea blanco (currentColor) */
+    color: var(--second-color);
     text-decoration: none;
     transition: background .2s ease, transform .1s ease, border-color .2s ease;
 }
@@ -425,13 +424,13 @@ img {
     transform: translateY(-1px);
 }
 
-/* tamaño del ícono dentro del botón */
+
 .footer .social svg{
     width: clamp(28px, 3.2vw, 32px);
     height: clamp(28px, 3.2vw, 32px);
 }
 
-/* texto inferior */
+
 .footer .copy{
     text-align: center;
     opacity: .9;
