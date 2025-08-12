@@ -8,8 +8,6 @@
     --second-color-opacity: rgba(255, 255, 255, 0.8);
     --third-color: rgba(55, 71, 79, 1);
     --third-color-opacity: rgba(55, 71, 79, 0.4);
-    --accent-color: rgba(0, 188, 212, 1);
-    --accent-color-opacity: rgba(0, 188, 212, 0.50);
     --soft-green: rgba(165, 214, 167, 1);
     --soft-green-opacity: rgba(165, 214, 167, 0.8);
     --text-color: rgba(20, 20, 20, 80%);
@@ -249,21 +247,20 @@ img {
 .carousel .slides {
     padding-left: 0;
     margin: 0;
-    /* 100% por cada slide */
     width: calc(100% * var(--n));
     display: flex;
     list-style: none;
     transition: transform 0.5s ease-in-out;
-    animation: carousel-slide 25s ease-in-out 3s;
+    animation: carousel-slide 15s ease-in-out 3s;
 }
 
-.carousel .slide{
+.carousel .slide {
     flex: 0 0 calc(100% / var(--n));
 }
 
 .carousel .slide img{
     width: 100%;
-    height: 60rem;
+    height: 50rem;
     display: block;
 }
 
@@ -309,12 +306,15 @@ img {
 #slide-4:checked ~ .slides {
     transform: translateX(-42.84%);
 }
+
 #slide-5:checked ~ .slides {
     transform: translateX(-57.12%);
 }
+
 #slide-6:checked ~ .slides {
     transform: translateX(-71.40%);
 }
+
 #slide-7:checked ~ .slides {
     transform: translateX(-85.68%);
 }
